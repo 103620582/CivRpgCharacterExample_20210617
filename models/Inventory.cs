@@ -26,9 +26,11 @@ namespace CivRpgCharacterExample_20210617.models
             this.Items = this.Items.OrderBy(i => i.Name).ToList();
         }
         public void SortByWeight() {
+            this.Items = this.Items.OrderBy(i => i.Weight).ToList();
             //TODO: complete this by using the above method as a base 
         }
         public int GetCurrentCapacity() { 
+            
             //TODO: return the total weight of items in the Items list
             return 0; 
         }
